@@ -1,2 +1,12 @@
-
+<div style="height: 100%; display: flex">
+    <div>
+        <!-- 选择器 -->
+        <button (click)="onJquerySelector()">使用选择器</button>
+        <!-- 过滤器 -->
+        <button (click)="onJqueryFilter()">使用过滤器</button>
+    </div>
+    <div style="flex: 1">
+        <router-outlet></router-outlet>
+    </div>
+</div>
 
