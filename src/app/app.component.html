@@ -1,11 +1,13 @@
-<div style="height: 100%; display: flex">
-    <div>
-        <!-- 选择器 -->
-        <button (click)="onJquerySelector()">使用选择器</button>
-        <!-- 过滤器 -->
-        <button (click)="onJqueryFilter()">使用过滤器</button>
+<div style="height: 100%; width: 100%; display: flex; background-color: rebeccapurple">
+    <div class="nav">
+        <ul>
+            <!-- 选择器 -->
+            <li><a routerLink="/selector" routerLinkActive="active">使用选择器</a></li>
+            <!-- 过滤器 -->
+            <li><a routerLink="/filter" routerLinkActive="active">使用过滤器</a></li>
+        </ul>
     </div>
-    <div style="flex: 1">
+    <div class="content" style="flex: 1">
         <router-outlet></router-outlet>
     </div>
 </div>
